@@ -1,6 +1,11 @@
 #include "Joystick.h" // Gaming gear library
 
-Joystick_ Joystick;
+Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID,JOYSTICK_TYPE_MULTI_AXIS,
+  0,0,               // Button Count, Hat Switch Count
+  true,false,false,  // X Axis, Y axis, Z Axis
+  false,false,false, // Rx, Ry, Rz
+  false,false,       // Rudder, Throttle
+  false,false,false);  // Accelerator, Brake, Steering
 
 int16_t Handle[20]; // Input 20 times value
 int16_t HandleSum; // Sum of 20 values
