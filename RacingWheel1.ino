@@ -20,7 +20,7 @@ void setup()
 void loop()
 {
   HandelSum=0; // HandleSum value reset
-  Handle[19]=analogRead(A0); // Set the 19th value to input of A0
+  Handle[19]=analogRead(A0); // Set the 20th value to input of A0
   for(i=0;i<19;i++) // Repeat 20 times
   {
     Handle[i]=Handle[i+1]; // Pull one step forward
